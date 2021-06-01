@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+/* Grid Padre */
+.contenedor {
+  width: 1366px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px auto 20px;
+  grid-row-gap: 20px;
+}
+
+/* Grid Hijos */
+header,
+main,
+footer {
+  padding: 20px;
+}
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+}
+
+.logo {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.menu {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  grid-gap: 10px;
+}
+main {
+}
+
+.parrafo {
+}
+
+.banner1{
+
+}
+.banner2{
+    
+}
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+}
+
+.copy {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+}
